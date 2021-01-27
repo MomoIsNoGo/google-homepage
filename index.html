@@ -1,18 +1,38 @@
 <!DOCTYPE html>
+<html lang="en"
 <head>
+    <title>Google homepage</title>
     <style>
     .center-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding-top:200px;
     }
-    
+    .searchbar{
+        background-color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20px;
+        padding: 10px 200px;
+    }
+    .searchbutton{
+        display: block;
+        margin: 20px auto 20px auto;
+    }
     </style>
     
 </head>
 <body>
     
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" class=center-img>
-    <input type="text"
+    <input type="text" class=searchbar>
+    <div>
+        <button type="submit" class=searchbutton>Google Search</button> <button type="submit" class=searchbutton>I'm Feeling Lucky</button>   
+    </div>
 </body>
 </html>
