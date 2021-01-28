@@ -27,16 +27,59 @@
         padding: 20px;
     }
     .button {
-        background-color: whitesmoke;
-        padding: 8px;
-        margin-right: 10px;
-        margin-left: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid;
+        border-radius: 4px;
+        padding:0 16px;
         font-size: 14px;
-    
+        margin: 11px 4px;
+        line-height:27px;
+        height: 36px;
+        min-width: 54px;
+
+    }
     a.nav-link:link {
-        color; #fb3f00;
+        color: black;
+        text-decoration:none;
+        font-size: 13px;
+        font-weight: normal;
+        padding-left: 15px;
+        padding-right:13px;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    a.nav-link:visited {
+        color: black;
         text-decoration:none;
     }
+
+    .rightsidelinks {
+        color: black;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        
+        float: right;
+        text-decoration:none;
+        font-weight: normal;
+    
+    }
+    .signinbutton {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        float: right;
+    
+        background-color: #4285f4;
+        border: 1px solid #4285f4;
+        border-radius: 2px;
+        text-decoration:none;
+        font-weight: 700;
+        padding:0 12px;
+        line-height: 26px;
+
+
     }
     h3 {
         display: block;
@@ -44,16 +87,51 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
         font-weight: normal;
-        
-        
+    }
+    .canadabar {
+        background-color: #f2f2f2;
+        position: relative;
+        padding-left:27px;
+        font-size: 15px;
+        text-align: left;
+        line-height: 40px;
+        color: rgba(0,0,0,.54 );
+        font-family: Arial, Helvetica, sans-serif;
+        border-top: 1px solid;
+        padding-left: 27px;
+        margin-left: 0 px;
+
+    }
+
+    .bottombar{
+        background-color: #f2f2f2;
+        padding-left:27px;
+        position: absolute;
+        bottom: 0;
+
+        font-size: 15px;
+        text-align: left;
+        line-height: 40px;
+        color: rgba(0,0,0,.54 );
+        font-family: Arial, Helvetica, sans-serif;
+        border-top: 1px solid;
+        margin-left: -15 px;
     }
     </style>
     
 </head>
 <body>
     <h1>
-        <a href="#">About</a>About Store</h1>
-    <h2></h2>
+        <a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header" class="nav-link">About</a>
+        <a href="https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA" class="nav-link">Store</a>
+        <a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.ca%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="signinbutton">Sign in</a>
+    </h1>
+    <h2>
+        <div class="rightsidelinks">
+            <a href="#" class="nav-link">Gmail</a>
+            <a href="#" class="nav-link">Images</a>
+        </div>
+    </h2>
 
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" class="center-img">
     <input type="text" class="searchbar">
@@ -61,8 +139,17 @@
         <button class="button">Google Search</button> 
         <button class="button">I'm Feeling Lucky</button>  
     </div>
-    <h3> Google offered in: <a href="#">Français </a>
+    <h3>Google offered in: <a href="#">Français</a> </h3>
     </h2>
-    
+    <div class="canadabar">
+        Canada
+    </div>    
+    <div class="bottombar">
+        <div>
+            Advertising
+            Business
+            How Search Works
+        </div>
+    </div>
 </body>
 </html>
